@@ -30,8 +30,8 @@ public class CustomKeyboard extends InputMethodService implements KeyboardView.O
     }
 
     @Override
-    public void onPress(int i)
-        if( i<91&&i>64 || i>96&&i<123 ) {
+    public void onPress(int j){
+        if( (j<91 && j>64) || (j>96 && j<123) ) {
             kv.setPreviewEnabled(true);
         }
 
@@ -47,7 +47,7 @@ public class CustomKeyboard extends InputMethodService implements KeyboardView.O
 
         InputConnection ic = getCurrentInputConnection();
         playClick(i);
-        
+
         switch (i)
         {
             case Keyboard.KEYCODE_DELETE:
