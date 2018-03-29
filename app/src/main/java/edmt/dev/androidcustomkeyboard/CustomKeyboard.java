@@ -47,6 +47,7 @@ public class CustomKeyboard extends InputMethodService implements KeyboardView.O
 
         InputConnection ic = getCurrentInputConnection();
         playClick(i);
+        
         switch (i)
         {
             case Keyboard.KEYCODE_DELETE:
